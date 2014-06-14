@@ -1,0 +1,77 @@
+.header-con{
+  width:100%;
+  position:fixed;
+  top:0px;
+  z-index: 2000;
+}
+
+header{
+  height:60px;
+  background-color: #000;
+  margin-bottom:60px;
+}
+
+html { height: 100%; }
+body { height: 100%; margin: 0; padding: 0 }
+
+h1{
+  font-size:30px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+#map-canvas {
+/* height: 100%; */
+  background-color:#000;
+  width: 800px;
+  height: 400px;
+}
+
+.map-con{
+  position: fixed;
+  top: 120px;
+  right: 30px;
+  width: 800px;
+  height: 100%;
+}
+
+header{
+  position:relative;
+}
+.search{
+  position:absolute;
+  bottom:20px;
+  right:20px;
+}
+
+#photo_location{
+  height:20px;
+}
+
+.wrapper{
+  margin:0 auto;
+  width:1200px;
+  position: relative;
+}
+.clear{ clear:both; }
+
+
+
+input[type=text]{
+  padding:6px 15px;
+  background:fff;
+  border:1px solid #dbdbdb;
+  border-bottom: 0;
+  outline:0;
+  font-size: 12px;
+}
+
+input[type=submit], input[type=submit]:hover {
+  position:relative;
+  padding:7px 15px;
+  left:-8px;
+  border:3px solid #207cca;
+  background-color:#207cca;
+  color:#fafafa;
+  outline:0;
+  cursor: pointer;
+}

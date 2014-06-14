@@ -5,8 +5,22 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDG3uTg3-flf-peVPabqiZtjCtE1oHC9JQ"
+  type="text/javascript"></script>
+
 </head>
 <body>
+<div class="header-con">  
+  <header>
+    <div class="search">
+      <%= form_for @photos, :url => search_photos_path do |f| %>
+         <%= f.text_field :location %>
+         <%= f.submit :search %>
+      <% end %>
+    </div>
+  </header>
+</div>
 
 <%= yield %>
 

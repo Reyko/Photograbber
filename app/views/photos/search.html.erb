@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <div class="photo-ext-con">
+    <% @photos.each do |photo| %>
+    <div class="photo-inner-con">
+      <div class="photo" data-latitude="<%= photo.latitude %>" data-longitude="<%= photo.longitude %>"  >
+        <%= image_tag photo.image_url %> 
+      </div>
+    </div>
+    <% end %>
+  </div>
+  <div class="map-con">
+    <div id="map-canvas">
+    </div>
+  </div>
+  <div class = "clear"></div>
+</div>

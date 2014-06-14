@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'instagram'
+gem 'geocoder'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.99.0'

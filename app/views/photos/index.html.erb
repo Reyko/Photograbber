@@ -1,0 +1,8 @@
+<div class="wrapper">
+  <h1>Popular Photos</h1>
+  <% @photos.each do |photo| %>
+    <div class="popular">
+      <%= image_tag photo.image_url %> 
+    </div>
+  <% end %> 
+</div>

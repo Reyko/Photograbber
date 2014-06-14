@@ -1,0 +1,39 @@
+// Place all the styles related to the photos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.photo-ext-con{
+  width:400px;
+  margin-right:60px;
+  float:left;
+}
+.photo-inner-con{
+  height:400px;
+  margin-bottom:10px;
+  border:1px dashed #000;
+}
+
+.photo{
+  width:400px;
+  height:400px;
+  float:left;
+}
+
+.photo img{
+  width:400px;
+  height:400px;
+}
+
+.popular{
+  float:left;
+  width:400px;
+  height:400px;
+}
+
+.popular img{
+  width:400px;
+  height:400px;
+}
+
+
+

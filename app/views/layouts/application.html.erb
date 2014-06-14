@@ -3,6 +3,7 @@
 <head>
   <title>Photograbber</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
@@ -13,8 +14,15 @@
 <body>
 <div class="header-con">  
   <header>
+  <%= link_to photos_path do %>
+    <div class="logo-con">
+      <div class="logo">
+      </div>
+      <p>Instafinder</p>
+    </div>
+    <% end %>
     <div class="search">
-      <%= form_for @photos, :url => search_photos_path do |f| %>
+      <%= form_for @photos, :url => search_photos_path,:method => :get do |f| %>
          <%= f.text_field :location %>
          <%= f.submit :search %>
       <% end %>

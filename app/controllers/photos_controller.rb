@@ -5,7 +5,8 @@ class PhotosController < ApplicationController
   end
 
   def search
-    @photos = Photo.find_by_location("London")
+    @location = params[:photo][:location]
+    @photos = Photo.find_by_location(@location)
   end
 
 end

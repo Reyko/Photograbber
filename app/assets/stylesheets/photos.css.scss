@@ -9,14 +9,15 @@
 }
 .photo-inner-con{
   height:400px;
+  width:100%;
   margin-bottom:10px;
   border:1px dashed #000;
 }
 
 .photo{
-  width:400px;
-  height:400px;
-  float:left;
+  width: 100%;
+  height: 100%;
+  float: left;
 }
 
 .photo img{
